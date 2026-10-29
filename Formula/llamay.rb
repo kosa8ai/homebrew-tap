@@ -4,6 +4,11 @@ class Llamay < Formula
   version "0.4.15"
   license :cannot_represent
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   on_macos do
     on_arm do
       # The Metal build, as install.sh picks on Apple Silicon.
@@ -25,11 +30,6 @@ class Llamay < Formula
       url "https://github.com/AzmxAI/llamay-releases/releases/download/v#{version}/llamay_#{version}_linux_amd64.tar.gz"
       sha256 "5bbf2e3c7e1d41d49e533427db9532abaf401d7a7ff7455a2040da6b18ae0a83"
     end
-  end
-
-  livecheck do
-    url "https://github.com/AzmxAI/llamay-releases"
-    strategy :github_latest
   end
 
   def install
