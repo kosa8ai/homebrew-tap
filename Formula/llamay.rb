@@ -1,7 +1,7 @@
 class Llamay < Formula
   desc "Local inference server with Ollama-, OpenAI- and Anthropic-compatible APIs"
   homepage "https://llamay.com"
-  version "0.4.18"
+  version "0.4.19"
   license :cannot_represent
 
   livecheck do
@@ -13,22 +13,22 @@ class Llamay < Formula
     on_arm do
       # The Metal build, as install.sh picks on Apple Silicon.
       url "https://github.com/AzmxAI/llamay-releases/releases/download/v#{version}/llamay_#{version}_darwin_arm64_metal.tar.gz"
-      sha256 "aa20b33e452e38ba91950d7946ee6de25fec7112b3a60360a00832ca812032f2"
+      sha256 "d6158c8e71fafdd1843236959451a41fc46b2ec8f5b62c67794abfd1fe71534e"
     end
     on_intel do
       url "https://github.com/AzmxAI/llamay-releases/releases/download/v#{version}/llamay_#{version}_darwin_amd64.tar.gz"
-      sha256 "4e6a7b4e925eb76bec937b6575fc3d668fcf598e9c898a3cee5c21d72654342d"
+      sha256 "e511d61b21fbf7164e9f69f19993922de2ee6a07cd05f662cd6d05ebc006ca16"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/AzmxAI/llamay-releases/releases/download/v#{version}/llamay_#{version}_linux_arm64.tar.gz"
-      sha256 "f584ae7068277aec9d0fc1c45938c35f47b59621c6693a9d56be191413aa746c"
+      sha256 "c60fe0578736ed682bef2856073dc15e9e9a1d26516de2caa72079d5fd2345a3"
     end
     on_intel do
       url "https://github.com/AzmxAI/llamay-releases/releases/download/v#{version}/llamay_#{version}_linux_amd64.tar.gz"
-      sha256 "6e97acb917c4d584832dd5dd56bc246c25acd5cf6e557f9256cc21725c114df0"
+      sha256 "5526bfd9b430b12815424019ca35bbc24cf02c51cc11fe6c5c484653c97e5598"
     end
   end
 
