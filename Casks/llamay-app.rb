@@ -1,6 +1,6 @@
 cask "llamay-app" do
-  version "0.4.19"
-  sha256 "046bfd4cf1420e10370e24b217f1839a6a136bf98324c363873ac322697e94f4"
+  version "0.4.20"
+  sha256 "de9e66dd7aa3222bcad7d80b591ebae6c1410f2c1e2812e9b685f79eb94bb13e"
 
   url "https://github.com/AzmxAI/llamay-releases/releases/download/v#{version}/llamay_#{version}_macos.dmg",
       verified: "github.com/AzmxAI/llamay-releases/"
